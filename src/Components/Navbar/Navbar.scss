@@ -1,0 +1,71 @@
+.navBar-container {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  height: 3vw;
+  align-items: center;
+
+  .left-section {
+    display: flex;
+    align-items: center;
+    img {
+      width: 6vw;
+      height: auto;
+    }
+
+    .navbar {
+      margin-left: 30px;
+      display: flex;
+      gap: 20px;
+
+      a {
+        font-size: 14px;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+          sans-serif;
+        text-decoration: none;
+        color: #e5e5e5;
+        transition: 0.5s all;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+
+      a:nth-child(1) {
+        // Home
+        color: white;
+        font-weight: 500;
+      }
+    }
+    // BOOTSTRAP RESPONSIVE
+    .dropdown {
+      display: none;
+
+      .btn {
+        background: none;
+        border: none;
+      }
+
+      .dropdown-item {
+        color: #b1aeae;
+      }
+    }
+  }
+  .right-section {
+    color: white;
+
+    .r-navitems {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      i {
+        font-size: 24px;
+        cursor: pointer;
+      }
+      a,
+      i:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+}

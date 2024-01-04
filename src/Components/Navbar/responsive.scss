@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    display: block !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+
+  .r-navitems {
+    a,
+    i:nth-child(3) {
+      display: none !important;
+    }
+  }
+}
