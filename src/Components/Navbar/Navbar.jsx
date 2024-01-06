@@ -17,7 +17,7 @@ function Navbar() {
       <div className="left-section">
         {/* logo */}
         <a href="#">
-          <img src={img} />
+          {/* <img src={img} /> */}
         </a>
         {/* navbar links section */}
         <nav className="navbar">
