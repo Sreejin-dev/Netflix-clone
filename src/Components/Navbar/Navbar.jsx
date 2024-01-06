@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import "./responsive.scss";
+import img from "../assets/netflixmain.png";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -11,11 +13,11 @@ function Navbar() {
     setClick(!click);
   };
   return (
-    <div className="navBar-container" >
+    <div className="navBar-container">
       <div className="left-section">
         {/* logo */}
         <a href="#">
-          <img src="src/assets/netflixmain.png" alt="" srcset="" />
+          <img src={img} />
         </a>
         {/* navbar links section */}
         <nav className="navbar">
@@ -38,10 +40,7 @@ function Navbar() {
           >
             Browse more
           </button>
-          <ul
-            class="dropdown-menu"
-           
-          >
+          <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" href="#" style={{ color: "white " }}>
                 Home
