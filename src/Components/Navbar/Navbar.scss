@@ -39,7 +39,10 @@
     // BOOTSTRAP RESPONSIVE
     .dropdown {
       display: none;
-
+      .dropdown-menu {
+        background: #000;
+        border-top: 1px solid white;
+      }
       .btn {
         background: none;
         border: none;
@@ -52,15 +55,31 @@
   }
   .right-section {
     color: white;
+    margin-right: 1rem;
 
     .r-navitems {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
 
       i {
         font-size: 24px;
         cursor: pointer;
+      }
+
+      i:nth-child(1) {
+        position: relative;
+        left: 1rem;
+      }
+      input {
+        color: white;
+        width: 15rem;
+        padding: 3px;
+        background: #000;
+        border: 1px solid #fff;
+      }
+      input::placeholder {
+        font-size: small;
       }
       a,
       i:nth-child(3) {

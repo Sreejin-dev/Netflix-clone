@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .dropdown {
     display: block !important;
   }
@@ -7,9 +7,16 @@
   }
 
   .r-navitems {
+    
     a,
     i:nth-child(3) {
       display: none !important;
+    }
+    input{
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      width: 10rem !important;
     }
   }
 }

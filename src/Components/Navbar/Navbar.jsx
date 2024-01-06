@@ -1,12 +1,17 @@
 // Navbar.js
 
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import "./responsive.scss";
 
 function Navbar() {
+  const [click, setClick] = useState(false);
+
+  const clickMe = () => {
+    setClick(!click);
+  };
   return (
-    <div className="navBar-container">
+    <div className="navBar-container" >
       <div className="left-section">
         {/* logo */}
         <a href="#">
@@ -24,7 +29,7 @@ function Navbar() {
 
         {/* RESPONSIVE BOOTSTRAP FOR MOBILE */}
 
-        <div class="dropdown" >
+        <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
             type="button"
@@ -33,9 +38,12 @@ function Navbar() {
           >
             Browse more
           </button>
-          <ul class="dropdown-menu" style={{backgroundColor:"black" , border : "1px solid green"}}>
+          <ul
+            class="dropdown-menu"
+           
+          >
             <li>
-              <a class="dropdown-item" href="#" style={{color:"white "}}>
+              <a class="dropdown-item" href="#" style={{ color: "white " }}>
                 Home
               </a>
             </li>
@@ -70,7 +78,14 @@ function Navbar() {
       {/* left section end */}
       <div className="right-section">
         <div className="r-navitems">
-          <i class="bi bi-search"></i>
+          <i class="bi bi-search" onClick={clickMe}></i>
+          <input
+            placeholder="Title, peoples , genres"
+            style={{
+              display: click ? "block" : "none",
+            }}
+            type="text"
+          />
           <a href="#" style={{ textDecoration: "none", color: "unset" }}>
             Children
           </a>
