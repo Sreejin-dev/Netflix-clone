@@ -31,43 +31,43 @@ function Navbar() {
 
         {/* RESPONSIVE BOOTSTRAP FOR MOBILE */}
 
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            class="btn btn-secondary dropdown-toggle"
+            className="btn btn-secondary dropdown-toggle"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Browse more
           </button>
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#" style={{ color: "white " }}>
+              <a className="dropdown-item" href="#" style={{ color: "white " }}>
                 Home
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 TV Shows
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Movies
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 New & Popular
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 My List
               </a>
             </li>{" "}
             <li>
-              <a class="dropdown-item" href="#">
+              <a className="dropdown-item" href="#">
                 Browse By Languages
               </a>
             </li>
@@ -77,7 +77,7 @@ function Navbar() {
       {/* left section end */}
       <div className="right-section">
         <div className="r-navitems">
-          <i class="bi bi-search" onClick={clickMe}></i>
+          <i className="bi bi-search" onClick={clickMe}></i>
           <input
             placeholder="Title, peoples , genres"
             style={{
@@ -88,9 +88,9 @@ function Navbar() {
           <a href="#" style={{ textDecoration: "none", color: "unset" }}>
             Children
           </a>
-          <i class="bi bi-bell"></i>
+          <i className="bi bi-bell"></i>
 
-          <i class="bi bi-person-square"></i>
+          <i className="bi bi-person-square"></i>
         </div>
       </div>
     </div>
